@@ -236,7 +236,7 @@ $$P(x_{ji}|t^{-ji},t_{ji}=t^{new},k) = \sum_{k=1}^{K}\frac{m_{\bullet k}}{m_{\bu
 
 $$P(t_{jt}=t|t^{-ji},k)\propto\left\{ \begin{aligned} &n_{jt\bullet}^{-ji} * f_{k_{jt}}^{-x_{ji}}(x_{ji}) \quad\quad\quad\quad\quad \text{if t previously used}\\ &\alpha * P(x_{ji}|t^{-ji},t_{ji}=t^{new},k) \quad \text{if t=$t^{new}$}\quad \end{aligned}\quad(3) \right.$$
 
-# 2.採樣k:
+2.採樣k:
 
 接著我們要為每個餐廳的每張桌子點菜，此時要分析的對象是不同餐廳的不同桌子點的菜色(共用同一張菜單)，由公式可以發現到，越多人點的菜，客人點新的菜也傾向點那一種，而點到新的菜的機率由$\gamma$和$f_{k^{new}}^{-x_{ji}}(x_{ji})$所控制
 
