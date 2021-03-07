@@ -58,18 +58,5 @@ DP的性質主要可以由三種不同的觀點去說明:
 
 示意圖如下:
 
-以數學形式表示如下，$\pi_k^{'}$就是我們每次抽出來的值，透過乘以扣掉前面權重的值得到當前權重，而$\phi_k$則是該權重在機率分布上的值:
+以數學形式表示如下，\(\pi_k^{'}\)就是我們每次抽出來的值，透過乘以扣掉前面權重的值得到當前權重，而\(\phi_k\)則是該權重在機率分布上的值:
 
-$$\pi_k^{'}|\alpha,H\,\sim beta(1,\alpha)\,,\,\pi_k=\pi_k^{'}\prod_{l=1}^{k-1}(1-\pi_l^{'}),\,\phi_k|\alpha,H\,\sim H$$
-
-因此如果我們以下面的方式定義隨機測度G會服從$DP(\alpha,H)$，而$\delta_{\phi_k}$中文比較難解釋，原文是說$\delta_{\phi_k}$ is a probability measure concentrated at $\phi_k$，意思是$\phi_k$是從連續分布$H$裡抽出來的是一個隨機變量，以機率的方式來衡量抽到$\phi_k$的機率
-
-$$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}\sim DP(\alpha,H)$$
-
-那為什麼說Stick-Breaking Construction可以顯現出DP的離散性?因為我們的權重是由$Beta(1,\alpha)$所抽出，計算期望值可知，當$\alpha=0$時抽出來的分佈最離散(只有一點)，當$\alpha=\infty$時抽出來的分布變連續，透過$\alpha$我們可以控制抽出分布的離散程度
-
-$$\begin{eqnarray}&&E(\pi_k^{'})=\frac{1}{1+\alpha}\\ &&\alpha=0,E(\pi_k^{'})=1\,\,\text{權重全部分配到$\pi_1$,此時最離散}\\ &&\alpha=\infty,E(\pi_k^{'})=0\,\,\text{變成連續分配}\end{eqnarray}$$
-
-而抽出來的這些權重也相加等於一$\sum_{k=1}^{\infty}\pi_k=1$，為了方便我們把抽出來的權重寫成$\pi=(\pi_k)_{k=1}^{\infty}$，，這裡的$\pi$也是隨機測度，由Griffiths,Engen,and McCloskey所定義，因此可以寫成$\pi \sim GEM(\alpha)$
-
-我們用程式來實作Stick-Breaking Construction

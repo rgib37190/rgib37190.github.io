@@ -71,5 +71,3 @@ $$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}\sim DP(\alpha,H)$$
 $$\begin{eqnarray}&&E(\pi_k^{'})=\frac{1}{1+\alpha}\\ &&\alpha=0,E(\pi_k^{'})=1\,\,\text{權重全部分配到$\pi_1$,此時最離散}\\ &&\alpha=\infty,E(\pi_k^{'})=0\,\,\text{變成連續分配}\end{eqnarray}$$
 
 而抽出來的這些權重也相加等於一$\sum_{k=1}^{\infty}\pi_k=1$，為了方便我們把抽出來的權重寫成$\pi=(\pi_k)_{k=1}^{\infty}$，，這裡的$\pi$也是隨機測度，由Griffiths,Engen,and McCloskey所定義，因此可以寫成$\pi \sim GEM(\alpha)$
-
-我們用程式來實作Stick-Breaking Construction
