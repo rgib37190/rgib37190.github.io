@@ -3,7 +3,7 @@ layout: post
 title:  "Hierarchical Dirichlect Process 理解"
 author: champion
 categories: [ NLP, Nonparametric Bayesian]
-image: assets/images/HDP理解.jpg
+image: assets/images/1.jpg
 tags: [featured]
 ---
 
@@ -24,9 +24,3 @@ DP是一個隨機過程，是由很多個Dirichlet分布所組成，首先先簡
 我們會先假設先驗機率來自Beta分布，然後透過擲硬幣後得到的資料推算出後驗機率，因為共軛性(Conjugate)，後驗機率也會是Beta分布，當今天擲很多種不同硬幣時就會變成Bernouli Process。
 
 同樣的情況推廣至多維時，變成擲一個骰子(Mutinomial分布)，此時我們的先驗機率會變成Dirchlet分布，一次模擬骰子每個面的機率，也就是Beta分布的推廣，同樣的先驗機率和後驗機率也具有共軛性(Conjugate)，後驗機率也會是Dirchlet分布，同樣當今天擲很多種不同骰子時就變成Dirichlet Process。
-
-因此在分類文章主題上，不同主題(骰子)由不同字(骰子的不同面)所組成，為Mutinomial分布，多個主題組成一個文章形成混合分布，我們希望從文章中分類出有什麼樣的主題，這時就需要Dirichlet Process去抽出很多的參數，來看哪些屬於同分布(同參數)。
-
-那為什麼需要使用Dirichlet Process作為我們的先驗分布呢?
-
-因為我們的數據是來自一個混合分布，即n個數據來自k個分布，其中n >= k，因此對於同一分布的觀測值，其分布的參數會是一樣的，但如果先驗是連續分布，那麼抽樣結果不可能出現相同的值，可以由下面的數學公式得知，$(\theta_{1})$和$(\theta_{2})$是由連續分布所產生，透過變數變換的方式讓 $(Y = \theta_{1}-\theta_{2})$ ， 因為連續分布單點並不存在機率，因此可得知$(\theta_{1})$等於$(\theta_{2})$的機率為零
