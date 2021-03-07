@@ -217,7 +217,7 @@ $$P(D) = \int_\theta P(D,\theta)d\theta$$
 
 首先對我們會用到的變數進行說明
 
-$x_{ji} \sim F(\theta_{ji}) - 觀察資料$
+$x_{ji} \sim F(\theta_{ji})$ - 觀察資料
 
 $t_{ji} - 第 j 個餐館的第 i 個table$
 
