@@ -47,8 +47,6 @@ $$G \sim DP(\alpha,H)$$
 
 $$(G(a_1),G(a_2),....,G(a_k)) \sim DIR(\alpha H(a_1),\alpha H(a_2),.....,\alpha H(a_k)) <=> G \sim DP(\alpha,H),\text{for all partition}\,\alpha_1,\alpha_2,....,\alpha_k$$
 
-![image](assets/images/dp_density.png)
-
 ## 二.DP的性質
 
 DP的性質主要可以由三種不同的觀點去說明:
@@ -73,7 +71,7 @@ $$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}\sim DP(\alpha,H)$$
 
 $$\begin{eqnarray}&&E(\pi_k^{'})=\frac{1}{1+\alpha}\\ &&\alpha=0,E(\pi_k^{'})=1\,\,\text{權重全部分配到$\pi_1$,此時最離散}\\ &&\alpha=\infty,E(\pi_k^{'})=0\,\,\text{變成連續分配}\end{eqnarray}$$
 
-而抽出來的這些權重也相加等於一$\sum_{k=1}^{\infty}\pi_k=1$，為了方便我們把抽出來的權重寫成$\pi=(\pi_k)_{k=1}^{\infty}$，這裡的$\pi$也是隨機測度，由Griffiths,Engen,and McCloskey所定義，因此可以寫成$\pi \sim GEM(\alpha)$
+而抽出來的這些權重也相加等於一$\sum_{k=1}^{\infty}\pi_k=1$，為了方便我們把抽出來的權重寫成$\pi=(\pi_k)_{k=1}^{\infty}$，，這裡的$\pi$也是隨機測度，由Griffiths,Engen,and McCloskey所定義，因此可以寫成$\pi \sim GEM(\alpha)$
 
 我們用程式來實作Stick-Breaking Construction
 
@@ -142,14 +140,14 @@ $$x_i \sim F(\theta_i)$$
 
 ### 4.The Infinite Limit of Finite Mixture Models(有限混和模型的極限近似):
 
-DPMM可以透過有限混合模型取極限後得到，之前我們在Stick-breaking Construction中定義$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}$，那在有限混合模型中我們假設有L個組成成分，因此我們可以定義$G=\sum_{k=1}^{L}\pi_k\delta_{\phi_k}$，將其取極限即是DPMM。
+DPMM可以透過有限混合模型取極限後得到，之前我們在Stick-breaking Construction中定義$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}$，那在有限混合模型中我們假設有L個組成成分，因此我們可以定義$G=\sum_{k=1}^{L}\pi_k\delta_{\phi_k}$，將其取極限即是DPMM
 
 那為什麼說DPMM可以不需要決定需要分群的數量?
 
 因為我們使用DP作為我們的先驗分布，而我們數據來自一個混合分布，對於同一分布的觀察值，其分布的參數$\theta$會是一樣的。若我們使用連續分布作為先驗分布，那麼抽樣結果不可能出現相同的值，而DP的離散性可以解決這樣的問題，同時由於模型數據增長速度大於混合模型個數的增長，因此對一定樣本的數據，我們可以得到遠小於樣本類別的個數。
 
 ## 三.HDP介紹
-那以上就是DP的介紹，DP只針對單一組數據或單一篇文章去分群，當有多組數據時，我們可以使用HDP將各組數據資訊共享，達到對多組數據分群的目的。
+那以上就是DP的介紹，DP只針對單一組數據或單一篇文章去分群，當有多組數據時，我們可以使用HDP將各組數據資訊共享，達到對多組數據分群的目的
 
 那要怎麼達到資訊共享呢?
 
@@ -167,9 +165,9 @@ $$x_{ji}|\theta_{ji} \sim F(\theta_{ji})$$
 
 ### 1.Stick-Breaking Construction(HDP):
 
-在DP的時候，我們透過Stick-Breaking Construction建構$G$，現在我們不只要建構$G$還要透過$G$建構各組數據的$G_j$。
+在DP的時候，我們透過Stick-Breaking Construction建構$G$，現在我們不只要建構$G$還要透過$G$建構各組數據的$G_j$
 
-這裡改一下符號原先用$\pi$作為抽出的權重，換成用$\beta$代替方便表示，這也是我們在DP的時候抽出的權重:
+這裡改一下符號原先用$\pi$作為抽出的權重，換成用$\beta$代替方便表示，這也是我們在DP的時候抽出的權重
 
 $$\beta_k^{'} \sim Beta(1,\gamma)\,,\beta_k=\beta_k^{'}\prod_{l=1}^{k-1}(1-\beta_l^{'})$$
 

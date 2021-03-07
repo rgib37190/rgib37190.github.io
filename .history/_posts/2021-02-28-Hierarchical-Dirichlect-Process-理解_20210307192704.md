@@ -47,7 +47,7 @@ $$G \sim DP(\alpha,H)$$
 
 $$(G(a_1),G(a_2),....,G(a_k)) \sim DIR(\alpha H(a_1),\alpha H(a_2),.....,\alpha H(a_k)) <=> G \sim DP(\alpha,H),\text{for all partition}\,\alpha_1,\alpha_2,....,\alpha_k$$
 
-![image](assets/images/dp_density.png)
+
 
 ## 二.DP的性質
 

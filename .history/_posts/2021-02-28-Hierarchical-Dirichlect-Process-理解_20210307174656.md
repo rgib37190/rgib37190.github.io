@@ -47,8 +47,6 @@ $$G \sim DP(\alpha,H)$$
 
 $$(G(a_1),G(a_2),....,G(a_k)) \sim DIR(\alpha H(a_1),\alpha H(a_2),.....,\alpha H(a_k)) <=> G \sim DP(\alpha,H),\text{for all partition}\,\alpha_1,\alpha_2,....,\alpha_k$$
 
-![image](assets/images/dp_density.png)
-
 ## 二.DP的性質
 
 DP的性質主要可以由三種不同的觀點去說明:
@@ -167,9 +165,9 @@ $$x_{ji}|\theta_{ji} \sim F(\theta_{ji})$$
 
 ### 1.Stick-Breaking Construction(HDP):
 
-在DP的時候，我們透過Stick-Breaking Construction建構$G$，現在我們不只要建構$G$還要透過$G$建構各組數據的$G_j$。
+在DP的時候，我們透過Stick-Breaking Construction建構$G$，現在我們不只要建構$G$還要透過$G$建構各組數據的$G_j$
 
-這裡改一下符號原先用$\pi$作為抽出的權重，換成用$\beta$代替方便表示，這也是我們在DP的時候抽出的權重:
+這裡改一下符號原先用$\pi$作為抽出的權重，換成用$\beta$代替方便表示，這也是我們在DP的時候抽出的權重
 
 $$\beta_k^{'} \sim Beta(1,\gamma)\,,\beta_k=\beta_k^{'}\prod_{l=1}^{k-1}(1-\beta_l^{'})$$
 
