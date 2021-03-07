@@ -229,7 +229,9 @@ $z_{ji}=k_{jt_{ji}} - 為第 j 個餐廳的第 i 個客人在第 t 個桌子所�
 
 $k_{jt} - 第 j 個餐館的第 t 個桌子點的菜$
 
-$K - 全部餐廳總共點了多少不同的菜$因為$F(\theta)$的機率密度函數為$f(\bullet|\theta)$，而$H$的機率密度函數為$h(\bullet)$，且$F$和$H$共軛，因此我們可以透過對$\phi$積分，也就是對我們的mixture component(文章主題)做積分，可以得到$x_{ji}$的機率密度函數如下:
+$K - 全部餐廳總共點了多少不同的菜$
+
+因為$F(\theta)$的機率密度函數為$f(\bullet|\theta)$，而$H$的機率密度函數為$h(\bullet)$，且$F$和$H$共軛，因此我們可以透過對$\phi$積分，也就是對我們的mixture component(文章主題)做積分，可以得到$x_{ji}$的機率密度函數如下:
 
 $$f_k^{-x_{ji}}(x_{ji})=\frac{\int f(x_{ji}|\phi_k)\prod_{j^{'}i^{'}\neq ji,z_{j^{'}i^{'}}=k}f(x_{j^{'}i^{'}}|\phi_k)h(\phi_k)d\phi_k}{\int \prod_{j^{'}i^{'}\neq ji,z_{j^{'}i^{'}}=k}f(x_{j^{'}i^{'}}|\phi_k)h(\phi_k)d\phi_k}\quad(1)$$
 
