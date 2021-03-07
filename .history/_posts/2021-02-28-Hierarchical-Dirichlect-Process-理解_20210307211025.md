@@ -145,8 +145,6 @@ $$\theta_1,\theta_2,....\theta_n \sim G$$
 
 $$x_i \sim F(\theta_i)$$
 
-![image](../assets/images/DPMM.png)
-
 ### 4.The Infinite Limit of Finite Mixture Models(有限混和模型的極限近似):
 
 DPMM可以透過有限混合模型取極限後得到，之前我們在Stick-breaking Construction中定義$G=\sum_{k=1}^{\infty}\pi_k\delta_{\phi_k}$，那在有限混合模型中我們假設有L個組成成分，因此我們可以定義$G=\sum_{k=1}^{L}\pi_k\delta_{\phi_k}$，將其取極限即是DPMM。
@@ -230,7 +228,6 @@ $z_{ji}=k_{jt_{ji}} - 為第 j 個餐廳的第 i 個客人在第 t 個桌子所�
 $k_{jt} - 第 j 個餐館的第 t 個桌子點的菜$
 
 $K$ - 全部餐廳總共點了多少不同的菜
-
 
 因為$F(\theta)$的機率密度函數為$f(\bullet|\theta)$，而$H$的機率密度函數為$h(\bullet)$，且$F$和$H$共軛，因此我們可以透過對$\phi$積分，也就是對我們的mixture component(文章主題)做積分，可以得到$x_{ji}$的機率密度函數如下:
 

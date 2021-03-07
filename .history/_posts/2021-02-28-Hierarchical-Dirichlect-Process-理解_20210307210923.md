@@ -124,8 +124,6 @@ $$P(\theta_i|\theta_1,...,\theta_i,\alpha,H)=\left\{ \begin{aligned} &\frac{n_k}
 
 那就舉個例子來說明，看下面這張圖，假設這個餐館的桌子是無限的，紅色圈圈代表有人坐的桌子，綠色圈圈代表還沒有人坐的桌子，藍色圈圈代表顧客，
 
-![image](../assets/images/chinese_restaurant_process.png)
-
 (a)第一個客人進入餐館，100%的機率會坐一張新桌子
 
 (b)第二個客人進入餐館，第一張桌子已經坐了1號客人，所以第二個顧客坐第一張桌子的機率是$\frac{1}{1+\alpha}$，坐新桌子的機率是$\frac{\alpha}{1+\alpha}$，假設2號客人坐了第二張桌子
@@ -144,8 +142,6 @@ $$G \sim DP(\alpha,H)$$
 $$\theta_1,\theta_2,....\theta_n \sim G$$
 
 $$x_i \sim F(\theta_i)$$
-
-![image](../assets/images/DPMM.png)
 
 ### 4.The Infinite Limit of Finite Mixture Models(有限混和模型的極限近似):
 
@@ -230,7 +226,6 @@ $z_{ji}=k_{jt_{ji}} - 為第 j 個餐廳的第 i 個客人在第 t 個桌子所�
 $k_{jt} - 第 j 個餐館的第 t 個桌子點的菜$
 
 $K$ - 全部餐廳總共點了多少不同的菜
-
 
 因為$F(\theta)$的機率密度函數為$f(\bullet|\theta)$，而$H$的機率密度函數為$h(\bullet)$，且$F$和$H$共軛，因此我們可以透過對$\phi$積分，也就是對我們的mixture component(文章主題)做積分，可以得到$x_{ji}$的機率密度函數如下:
 
