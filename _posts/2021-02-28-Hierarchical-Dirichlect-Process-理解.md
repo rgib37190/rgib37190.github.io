@@ -78,7 +78,7 @@ $$\begin{eqnarray}&&E(\pi_k^{'})=\frac{1}{1+\alpha}\\ &&\alpha=0,E(\pi_k^{'})=1\
 
 我們用程式來實作Stick-Breaking Construction
 
-
+<script src="https://gist.github.com/rgib37190/306faf50e9da26869bcf2d7b6eea5460.js"></script>
 ```python
 #!/usr/bin/env python3
 import numpy as np
