@@ -152,7 +152,7 @@ image: assets/images/pandas/pandas.png
 
 何時會發生Error:當輸入的整數索引超過資料的索引的時候，會出現IndexError(除了切片索引之外)，但是使用.loc時若超過並不會發生Error會把輸入範圍內包含的資料找出來
 
-以下幾個例子給大家看看:
+以下幾個例子給大家看看
 
 <script src="https://gist.github.com/rgib37190/ddedec9fd304e739936d1598e0feaac1.js"></script>
 

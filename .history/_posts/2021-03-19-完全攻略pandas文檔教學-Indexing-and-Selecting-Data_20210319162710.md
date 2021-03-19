@@ -30,7 +30,7 @@ image: assets/images/pandas/pandas.png
     src="../assets/images/pandas/picture3.png">
 </center>
 
-還有另外一種方法可以對資料進行索引，利用屬性 . 來進行索引，比如說像下面這樣:
+還有另外一種方法可以對資料進行索引，利用屬性(".")來進行索引，比如說像下面這樣:
 
 <script src="https://gist.github.com/rgib37190/a2bd4b3f99e802524cd278a8ebbfd3d1.js"></script>
 
@@ -40,7 +40,7 @@ image: assets/images/pandas/pandas.png
     src="../assets/images/pandas/picture4.png">
 </center>
 
-但是這種方法限制比較多所以還是用 [  ] 進行索引會比較好，限制如下:
+但是這種方法限制比較多所以還是用[  ]進行索引會比較好，限制如下:
 
 1.索引名稱必須是valid identifier
 
@@ -48,7 +48,7 @@ image: assets/images/pandas/pandas.png
 
 3.索引名稱不能是index,major_axis,minor_axis,items,labels
 
-上面用 [  ] 和 . 進行索引的方式是比較直覺的方法，但是常常我們並不事先知道資料的類型，運算上會有一些最佳化的限制，所以pandas提供了下面兩種方法:
+上面用[  ] 和"."進行索引的方式是比較直覺的方法，但是常常我們並不事先知道資料的類型，運算上會有一些最佳化的限制，所以pandas提供了下面兩種方法:
 
 1.使用.loc[]
 
@@ -152,7 +152,7 @@ image: assets/images/pandas/pandas.png
 
 何時會發生Error:當輸入的整數索引超過資料的索引的時候，會出現IndexError(除了切片索引之外)，但是使用.loc時若超過並不會發生Error會把輸入範圍內包含的資料找出來
 
-以下幾個例子給大家看看:
+以下幾個例子給大家看看
 
 <script src="https://gist.github.com/rgib37190/ddedec9fd304e739936d1598e0feaac1.js"></script>
 
