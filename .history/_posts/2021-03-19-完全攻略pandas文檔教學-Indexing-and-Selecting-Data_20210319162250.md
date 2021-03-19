@@ -207,9 +207,3 @@ image: assets/images/pandas/pandas.png
 本來選取A和B行的值是這樣
 
 <script src="https://gist.github.com/rgib37190/3a9518fcad2dc24df05789643c14df9d.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture17.png">
-</center>

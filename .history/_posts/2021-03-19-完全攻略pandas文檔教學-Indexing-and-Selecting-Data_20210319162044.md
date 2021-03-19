@@ -183,33 +183,3 @@ image: assets/images/pandas/pandas.png
 </center>
 
 切片索引
-
-<script src="https://gist.github.com/rgib37190/1231d8b765cb61c395c16802302e391b.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture15.png">
-</center>
-
-布林值陣列
-
-<script src="https://gist.github.com/rgib37190/9ac8df7d97de18ca4ee4343c3e1310d0.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture16.png">
-</center>
-
-**注意:在使用loc和iloc時要注意一件事，pandas會先進行行對齊(column alignment)才會將值進行轉換，什麼意思呢?看下面的例子**
-
-本來選取A和B行的值是這樣
-
-<script src="https://gist.github.com/rgib37190/3a9518fcad2dc24df05789643c14df9d.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture17.png">
-</center>

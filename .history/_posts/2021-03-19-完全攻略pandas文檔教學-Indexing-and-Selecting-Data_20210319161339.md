@@ -28,6 +28,11 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture3.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖三)</div>
 </center>
 
 還有另外一種方法可以對資料進行索引，利用屬性(".")來進行索引，比如說像下面這樣:
@@ -38,6 +43,11 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture4.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖四)</div>
 </center>
 
 但是這種方法限制比較多所以還是用[  ]進行索引會比較好，限制如下:
@@ -76,6 +86,11 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture4.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖五)</div>
 </center>
 
 使用一個陣列去索引
@@ -86,6 +101,11 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture5.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖六)</div>
 </center>
 
 使用切片標籤
@@ -96,6 +116,11 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture6.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖七)</div>
 </center>
 
 使用布林值陣列
@@ -106,110 +131,14 @@ image: assets/images/pandas/pandas.png
     <img style="border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="../assets/images/pandas/picture7.png">
+    <br>
+    <div style="color:orange; border-bottom: 0px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 1px;">(圖八)</div>
 </center>
 
 使用可調用函數
 
 <script src="https://gist.github.com/rgib37190/45e5a12c43bc792af62ee25c6e97e5aa.js"></script>
 
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture8.png">
-</center>
-
-當使用loc的切片索引的時候會將切片範圍中的切片包含進來，若索引排序過後，即使切片範圍的兩邊都沒有在資料裡，還是會把範圍內的資料選取出來，反之若沒排序，就會發生KeyError，舉個例子給大家看看
-
-<script src="https://gist.github.com/rgib37190/8e862201b35829306fd7e9f0ba4b6871.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture9.png">
-</center>
-
-<script src="https://gist.github.com/rgib37190/99f6c0240e1377752bbd5b49fb9c36fa.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture10.png">
-</center>
-
-將Series排序後在選取
-
-<script src="https://gist.github.com/rgib37190/6e6d82d3b9e0f1781a6e0abc5aa22d3e.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture11.png">
-</center>
-
-2.使用.iloc[]
-
-這個方法會使用整數值去尋找資料，也和.loc一樣有上面這五種類型可以輸入
-
-何時會發生Error:當輸入的整數索引超過資料的索引的時候，會出現IndexError(除了切片索引之外)，但是使用.loc時若超過並不會發生Error會把輸入範圍內包含的資料找出來
-
-以下幾個例子給大家看看
-
-<script src="https://gist.github.com/rgib37190/ddedec9fd304e739936d1598e0feaac1.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture12.png">
-</center>
-
-單一整數索引
-
-<script src="https://gist.github.com/rgib37190/44f3069b2c1bb511c7b48cf2c483f574.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture13.png">
-</center>
-
-使用一個陣列去索引
-
-<script src="https://gist.github.com/rgib37190/0da31813612275e3c18cc4cd78bffc0f.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture14.png">
-</center>
-
-切片索引
-
-<script src="https://gist.github.com/rgib37190/1231d8b765cb61c395c16802302e391b.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture15.png">
-</center>
-
-布林值陣列
-
-<script src="https://gist.github.com/rgib37190/9ac8df7d97de18ca4ee4343c3e1310d0.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture16.png">
-</center>
-
-**注意:在使用loc和iloc時要注意一件事，pandas會先進行行對齊(column alignment)才會將值進行轉換，什麼意思呢?看下面的例子**
-
-本來選取A和B行的值是這樣
-
-<script src="https://gist.github.com/rgib37190/3a9518fcad2dc24df05789643c14df9d.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture17.png">
-</center>
