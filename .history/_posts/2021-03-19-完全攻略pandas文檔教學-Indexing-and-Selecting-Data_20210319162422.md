@@ -225,11 +225,3 @@ image: assets/images/pandas/pandas.png
 </center>
 
 如果想要將A行和B行的值互換那就必須指定互換的是A行和B行的值，不然pandas會先進行行對齊，值就不會互換
-
-<script src="https://gist.github.com/rgib37190/07ff44e614e73338c6bc53af5b03c1a0.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture19.png">
-</center>

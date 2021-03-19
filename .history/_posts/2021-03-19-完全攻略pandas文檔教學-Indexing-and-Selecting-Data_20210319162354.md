@@ -217,19 +217,3 @@ image: assets/images/pandas/pandas.png
 如果你想要將這兩行的值互換，按照下面這樣做這樣，pandas會先A行和A行對齊，B行和B行對齊，因此並不會改變A行和B行的值
 
 <script src="https://gist.github.com/rgib37190/3bbb7f0e2fed16c3c59074ee8514439b.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture18.png">
-</center>
-
-如果想要將A行和B行的值互換那就必須指定互換的是A行和B行的值，不然pandas會先進行行對齊，值就不會互換
-
-<script src="https://gist.github.com/rgib37190/07ff44e614e73338c6bc53af5b03c1a0.js"></script>
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="../assets/images/pandas/picture19.png">
-</center>
