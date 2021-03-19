@@ -2,7 +2,7 @@
 layout: post
 title:  "Hierarchical Dirichlect Process 理解"
 author: champion
-categories: [ NLP, Nonparametric Bayesian]
+categories: [ NLP, Nonparametric Bayesian, Jekyll]
 image: assets/images/HDP理解.jpg
 tags: [featured]
 ---
