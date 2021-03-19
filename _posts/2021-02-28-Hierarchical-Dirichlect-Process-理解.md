@@ -79,30 +79,6 @@ $$\begin{eqnarray}&&E(\pi_k^{'})=\frac{1}{1+\alpha}\\ &&\alpha=0,E(\pi_k^{'})=1\
 我們用程式來實作Stick-Breaking Construction
 
 <script src="https://gist.github.com/rgib37190/306faf50e9da26869bcf2d7b6eea5460.js"></script>
-```python
-#!/usr/bin/env python3
-import numpy as np
-from numpy.random import beta
-import matplotlib.pyplot as plt
-def stick_breaking(alpha, k):
-    betas = beta(1, alpha, k)
-    remaining_pieces = np.append(1, np.cumprod(1 - betas[:-1]))
-    p = betas * remaining_pieces
-    return p/p.sum()
-#alpha=2
-k = 20
-fig, axes = plt.subplots(2, 5, sharex=True, sharey=True, figsize=(10,6))
-for ax in np.ravel(axes):
-    ax.bar(np.arange(k), np.sort(stick_breaking(alpha=2, k=k))[::-1])
-    ax.set_ylim(0,1)
-#alpha=100
-k = 20
-fig, axes = plt.subplots(2, 5, sharex=True, sharey=True, figsize=(10,6))
-for ax in np.ravel(axes):
-    ax.bar(np.arange(k), np.sort(stick_breaking(alpha=100, k=k))[::-1])
-    ax.set_ylim(0,1)
-
-```
 
 我們分別畫出了在$\alpha=2$和$\alpha=100$的時候，透過Stick-Breaking Construction建構DP資料的分布情況，可以看到當$\alpha=2$時，資料分布是離散的，當我們將$\alpha$增大為100時，資料分布就變得沒那麼離散，到無限大時，就會變連續的。
 ![image](../assets/images/alpha2.png)
