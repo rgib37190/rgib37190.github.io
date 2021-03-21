@@ -234,4 +234,4 @@ image: assets/images/pandas/pandas.png
     src="../assets/images/pandas/picture19.png">
 </center>
 
-<iframe data-v-b66e9a5a="" src="https://button.like.co/in/embed/champion516615/button?referrer=https://rgib37190.github.io/%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5pandas%E6%96%87%E6%AA%94%E6%95%99%E5%AD%B8-Indexing-and-Selecting-Data/" frameborder="0" class="lc-margin-top-64 lc-margin-bottom-32 lc-mobile"></iframe>
+<iframe data-v-b66e9a5a="" src="https://button.like.co/in/embed/你的likecoin帳號/button?referrer=URL" frameborder="0" class="lc-margin-top-64 lc-margin-bottom-32 lc-mobile"></iframe>
