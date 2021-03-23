@@ -244,14 +244,3 @@ image: assets/images/pandas/pandas.png
   ></iframe>
   <div></div>
 </div>
-
-<div>
-  <iframe
-    scrolling="no"
-    frameborder="0"
-    id = "likecoin"
-    style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Python%E8%A8%88%E7%AE%97%E9%82%84%E5%8E%9F%E8%82%A1%E5%83%B9/"'
-  ></iframe>
-  <div></div>
-</div>
