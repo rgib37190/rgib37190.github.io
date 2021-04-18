@@ -241,7 +241,7 @@ image: assets/images/pandas/pandas.png
     scrolling="no"
     frameborder="0"
     style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5pandas%E6%96%87%E6%AA%94%E6%95%99%E5%AD%B8-Indexing-and-Selecting-Data/"'
+    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/Hierarchical-Dirichlect-Process-%E7%90%86%E8%A7%A3/"'
   ></iframe>
   <div></div>
 </div>

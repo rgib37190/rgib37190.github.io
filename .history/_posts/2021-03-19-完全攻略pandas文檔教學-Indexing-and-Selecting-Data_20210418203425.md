@@ -234,14 +234,13 @@ image: assets/images/pandas/pandas.png
     src="../assets/images/pandas/picture19.png">
 </center>
 
-那以上就是關於Pandas索引方法的介紹，如果有什麼問題大家可以在下方留言，我會盡力回答大家!!!如果喜歡我的文章，可以幫我拍拍手哦~~~
 
 <div>
   <iframe
     scrolling="no"
     frameborder="0"
     style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5pandas%E6%96%87%E6%AA%94%E6%95%99%E5%AD%B8-Indexing-and-Selecting-Data/"'
+    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/Hierarchical-Dirichlect-Process-%E7%90%86%E8%A7%A3/"'
   ></iframe>
   <div></div>
 </div>
