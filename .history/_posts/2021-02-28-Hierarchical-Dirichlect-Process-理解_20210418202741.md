@@ -233,7 +233,7 @@ $$P(k_{jt}=k|t,k^{-jt})\propto\left\{ \begin{aligned} &m_{\bullet k}^{-jt}f_{k}^
     scrolling="no"
     frameborder="0"
     style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://rgib37190.github.io/Hierarchical-Dirichlect-Process-%E7%90%86%E8%A7%A3/'
+    src='https://button.like.co/in/embed/[LikerID]/button?referrer="你的文章網址"'
   ></iframe>
   <div></div>
 </div>
