@@ -226,7 +226,7 @@ $$P(t_{jt}=t|t^{-ji},k)\propto\left\{ \begin{aligned} &n_{jt\bullet}^{-ji} * f_{
 
 $$P(k_{jt}=k|t,k^{-jt})\propto\left\{ \begin{aligned} &m_{\bullet k}^{-jt}f_{k}^{-x_{jt}}(x_{jt})\quad \text{if k is previously used}\\ &\gamma f_{k^{new}}^{-x_{jt}}(x_{jt})\quad\quad \text{if k=\\(k^{new}\\)} \end{aligned} \right.$$
 
-那以上就是關於HDP的介紹，如果有什麼問題大家可以在下方留言，我會盡力回答大家!!!如果喜歡我的文章，可以幫我拍拍手哦~~~
+那以上就是關於HDP的介紹，如果有什麼問題大家可以在下方留言，我會盡力回答大家!!!
 
 
-<div> <iframe scrolling='no' frameborder='0' id = likecoin0 style='width:300%; max-width:100px; height:100px; margin:auto; overflow:hidden; display:block; float:left;' src='https://button.like.co/in/embed/champion516615/button?referrer=https://likecoin-2.github.io/soya_0.html' ></iframe> <div></div> </div>
+<div> <iframe scrolling='no' frameborder='0' id = likecoin0 style='width:100%; max-width:100px; height:100px; margin:auto; overflow:hidden; display:block; float:left;' src='https://button.like.co/in/embed/champion516615/button?referrer=https://likecoin-2.github.io/soya_0.html' ></iframe> <div></div> </div>
