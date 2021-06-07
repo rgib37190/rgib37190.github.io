@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "使用tensorboard視覺化"
+title:  "如何做好資金管理，凱利公式告訴你答案"
 author: champion
 categories: [Pytorch, TensorBoard]
-image: assets/images/money_management/tensorboard-logo.png
+image: assets/images/money_management/money_management.jpg
 ---
 
 # 安裝tensorboard

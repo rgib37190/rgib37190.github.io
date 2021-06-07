@@ -1,12 +1,4 @@
----
-layout: post
-title:  "使用tensorboard視覺化"
-author: champion
-categories: [Pytorch, TensorBoard]
-image: assets/images/money_management/tensorboard-logo.png
----
-
-# 安裝tensorboard
+## 安裝tensorboard
 
 安裝tensorboard的版本需要在1.15版本以上才可以在pytorch使用
 
