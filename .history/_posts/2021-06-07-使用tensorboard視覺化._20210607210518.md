@@ -97,14 +97,3 @@ logdir為tensorboard輸出數據的地方
     padding: 1px;">(圖四)</div>
 </center>
 
-那以上就是關於如何使用tensorboard的介紹，如果有什麼問題都可以在下面進行留言!!!如果喜歡我的文章可以幫我拍拍手哦~~~~
-
-<div>
-  <iframe
-    scrolling="no"
-    frameborder="0"
-    style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E4%BD%BF%E7%94%A8tensorboard%E8%A6%96%E8%A6%BA%E5%8C%96"'
-  ></iframe>
-  <div></div>
-</div>

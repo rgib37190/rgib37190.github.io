@@ -104,7 +104,7 @@ logdir為tensorboard輸出數據的地方
     scrolling="no"
     frameborder="0"
     style="width:100%; max-width:485px; height:240px; margin:auto; overflow:hidden; display:block;"
-    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E4%BD%BF%E7%94%A8tensorboard%E8%A6%96%E8%A6%BA%E5%8C%96"'
+    src='https://button.like.co/in/embed/champion516615/button?referrer="https://rgib37190.github.io/%E5%A6%82%E4%BD%95%E5%81%9A%E5%A5%BD%E8%B3%87%E9%87%91%E7%AE%A1%E7%90%86-%E5%87%B1%E5%88%A9%E5%85%AC%E5%BC%8F%E5%91%8A%E8%A8%B4%E4%BD%A0%E7%AD%94%E6%A1%88/"'
   ></iframe>
   <div></div>
 </div>
